@@ -12,7 +12,9 @@ namespace Novemberprojekt_Emilie_Lindell
     }
     class Cards
     {
-        public string visaKort { get; set; }
+        public string visaKort { get; set; }//Jag använder det för att kunna på ett kortfattat sätt skriva den typen av egenskap
+        public kortTyp tecken { get; set; } // För att sedan kunna visa vilket tecken kortet har
+        public int värde { get; set; } // För att kunna visa själva numret sen och senare med en koppling till tecknet
 
     }
 }

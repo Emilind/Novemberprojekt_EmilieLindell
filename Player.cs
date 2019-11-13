@@ -8,6 +8,7 @@ namespace Novemberprojekt_Emilie_Lindell
 {
     class Player
     {
-        public string namn;
+        public string namn { get; set; }
+        public Queue<Cards> Deck { get; set; }// Jag använder denna metod för att förafram kortleken och inte en list, för att en queue så köas strings
     }
 }
