@@ -16,5 +16,18 @@ namespace Novemberprojekt_Emilie_Lindell
         public kortTyp tecken { get; set; } // För att sedan kunna visa vilket tecken kortet har
         public int värde { get; set; } // För att kunna visa själva numret sen och senare med en koppling till tecknet
 
+        public static class mellanting//Jag skapa denna metod för att kunna skapa det som kopplar själva korten och gör koden enklare
+        {
+            public static void enqueue(this Queue<Cards>, Queue<Cards> newCards)//jag använde detta för att "enqueue" kan köa five strings i taget. Och jag tänkte implantera något sätt (vet inte än vad) så att det hela tiden sätts in nya kort i enqueue.
+            {
+                foreach()
+                {
+
+                }
+
+            }
+
+        }
+
     }
 }
