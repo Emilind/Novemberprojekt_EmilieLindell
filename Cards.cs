@@ -18,14 +18,28 @@ namespace Novemberprojekt_Emilie_Lindell
 
         public static class mellanting//Jag skapa denna metod för att kunna skapa det som kopplar själva korten och gör koden enklare
         {
-            public static void enqueue(this Queue<Cards>, Queue<Cards> newCards)//jag använde detta för att "enqueue" kan köa five strings i taget. Och jag tänkte implantera något sätt (vet inte än vad) så att det hela tiden sätts in nya kort i enqueue.
+
+            public static void Enqueue(this Queue<Cards> cards, Queue<Cards> newCards)//jag använde detta för att "enqueue" kan köa five strings i taget. Och jag tänkte implantera något sätt (vet inte än vad) så att det hela tiden sätts in nya kort i enqueue.
             {
-                foreach()
+                foreach (var card in newCards)// användningen av "var" är för att då behöver dem inte vara en explicit typ. "in" använder jag för att kunna passera denna parameter i detta fall igenom "var" utan att ändra värdet.
+                {
+                    cards.Enqueue(card);
+                }
+            }
+        }
+
+        public static class Kortdack // det är i denna metod som jag tänker börja göra själva korten och strukturera upp alla olika korttyper
+        {
+            public static Queue<Cards> CreateCards()
+            {
+                Queue<Cards> cards = new Queue<Cards>();
+                for (int i = 2; i <= 14; i++)
                 {
 
-                }
 
+                }
             }
+
 
         }
 
