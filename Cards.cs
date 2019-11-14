@@ -28,18 +28,18 @@ namespace Novemberprojekt_Emilie_Lindell
             }
         }
 
-        public static class Kortdack // det är i denna metod som jag tänker börja göra själva korten och strukturera upp alla olika korttyper
+        public static class Kortdack // det är i denna metod som jag tänker börja göra själva korten och strukturera upp alla olika korttyper såsom ess, damer och kungar osv. Jag gör den static för att det ska funka samma över alla olika classes.
         {
             public static Queue<Cards> CreateCards()
             {
                 Queue<Cards> cards = new Queue<Cards>();
                 for (int i = 2; i <= 14; i++)
                 {
-
+                    foreach () ;///???? funkar den? Ta reda på!!!!
 
                 }
-            }
-
+                return Shuffle//ta reda på hur man gör shuffle array!!
+             }
 
         }
 
