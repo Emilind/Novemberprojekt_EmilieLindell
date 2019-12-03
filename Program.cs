@@ -11,6 +11,10 @@ namespace Novemberprojekt_Emilie_Lindell
         static void Main(string[] args)
         {
 
+            Kortlek k = new Kortlek();
+            Console.WriteLine(k);
+            Console.ReadLine();
+
 
         }
     }

@@ -26,8 +26,27 @@ namespace Novemberprojekt_Emilie_Lindell
             {
                 foreach(värde v in Enum.GetValues(typeof(värde)))
                 {
-                    leken[i]= new Kort {tecken = k, kortVärde = v}
+                    leken[i] = new Kort { tecken = k, kortVärde = v };
                     i++;
+                }
+            }
+            blandning();
+        }
+        
+        public void blandning()//Jag anävnder mig av en void för att skapa metoden som "blandar" korten, så att jag sedan kan ropa på den i min loop. 
+        {
+            Random gen = new Random();
+            Kort temp;
+
+            for (int antalBlandningar = 0; antalBlandningar < 10; antalBlandningar++)//denna kod visar på att den kommer blanda korten 10 gånger
+            {
+                for (int i = 0; i < antalKort; i++)//detta är för att då går den igenom de 52 korten som leken består av och då ess till kung. jag "omvandlar" typ det då för att få fram korten.
+                {
+                    int korti = gen.Next(13);
+                    temp = leken[i];
+                    leken[i] = leken[korti];
+                    leken[korti] = temp;
+                    
                 }
             }
         }
