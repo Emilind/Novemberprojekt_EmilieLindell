@@ -17,7 +17,7 @@ namespace Novemberprojekt_Emilie_Lindell
 
         }
 
-        public Kort[] getleken {get { return leken; } }// denna metod använder jag för att hämta min kortlek
+        public Kort[] hämtaLeken {get { return leken; } }// denna metod använder jag för att hämta min kortlek
 
         public void funkandeKortlek()
         {
@@ -50,5 +50,6 @@ namespace Novemberprojekt_Emilie_Lindell
                 }
             }
         }
+       
     }
 }
