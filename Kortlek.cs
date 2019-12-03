@@ -22,7 +22,14 @@ namespace Novemberprojekt_Emilie_Lindell
         public void funkandeKortlek()
         {
             int i = 0;
-            foreach(kortTyp)
+            foreach(kortTyp k in Enum.GetValues(typeof(kortTyp)))
+            {
+                foreach(värde v in Enum.GetValues(typeof(värde)))
+                {
+                    leken[i]= new Kort {tecken = k, kortVärde = v}
+                    i++;
+                }
+            }
         }
     }
 }
